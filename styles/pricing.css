@@ -15,13 +15,13 @@
   }
 
   & .card p {
-    margin-top: .25rem;
+    margin-top: 0.25rem;
   }
 
   & zin-pricing {
     display: block;
     padding-block: 1.5rem;
-    font: var(--fw-bold) var(--fs-price)/1.2 var(--ff-sans);
+    font: var(--fw-bold) var(--fs-price) / 1.2 var(--ff-sans);
   }
 
   & zin-pricing small {
@@ -29,14 +29,17 @@
     color: var(--text-color-secondary);
   }
 
-  .btn {
+  & .btn {
     width: 100%;
   }
 
   & .separator {
     height: 1px;
     margin-block: 2rem;
-    background: radial-gradient(var(--text-color-secondary), var(--surface-color) 70%);
+    background: radial-gradient(
+      var(--text-color-secondary),
+      var(--surface-color) 70%
+    );
   }
 
   & li {
@@ -96,7 +99,7 @@
   }
   
 
-  @media (width >=80em) {
+  @media (width >= 80em) {
     --fs-price: 2.5rem;
 
     & header {
@@ -106,10 +109,10 @@
 
     & .premium .card {
       padding-bottom: 6rem;
-    }    
+    }
 
-    .btn-md{
-      padding: .75rem 1.5rem;
+    .btn-md {
+      padding: 0.75rem 1.5rem;
       font-size: var(--fs-base);
     }
 
